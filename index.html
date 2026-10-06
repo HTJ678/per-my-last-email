@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>per-my-last-email — 把话说体面</title>
+  <meta name="description" content="Say it nicely. Mean it anyway. 把糙话变成体面话，中英双语，一个滑块控制体面与带刺。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <header class="head">
+      <div class="head-left">
+        <h1>per-my-last-email</h1>
+        <p class="tagline">Say it nicely. <em>Mean it anyway.</em></p>
+      </div>
+      <div class="mode" role="tablist" aria-label="模式">
+        <button id="mode-flash" class="mode-btn is-on" role="tab" aria-selected="true">Flash</button>
+        <button id="mode-pro" class="mode-btn" role="tab" aria-selected="false">Pro</button>
+        <span id="pro-badge" class="badge" hidden>需 key</span>
+      </div>
+    </header>
+
+    <section class="workspace">
+      <div class="pane pane-left">
+        <div class="pane-head">
+          <span class="pane-title">原话</span>
+          <span class="muted">糙一点没关系</span>
+        </div>
+
+        <textarea id="input" placeholder="例：你为什么不回我？"></textarea>
+
+        <div class="controls">
+          <label class="field field-inline">
+            <span class="field-label">场景</span>
+            <select id="scenario">
+              <option value="email">邮件</option>
+              <option value="colleague">同事</option>
+              <option value="friend">朋友</option>
+              <option value="comment">评论区</option>
+            </select>
+          </label>
+
+          <label class="field field-inline">
+            <span class="field-label">语言</span>
+            <select id="lang">
+              <option value="both">双语对照</option>
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="field">
+          <span class="field-label">档位：<strong id="tone-name">正式</strong></span>
+          <input id="tone" type="range" min="0" max="100" step="1" value="66">
+          <div class="stops">
+            <span>直白</span><span>礼貌</span><span>正式</span><span>隐晦</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="sample" class="btn btn-ghost">试个例子</button>
+          <span id="hint" class="hint"></span>
+        </div>
+      </div>
+
+      <div class="pane pane-right">
+        <div class="pane-head">
+          <span class="pane-title">体面版</span>
+          <span class="muted">点右上角可复制</span>
+        </div>
+        <div id="results" class="results" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="pro-panel" class="panel pro" hidden>
+      <div class="pro-head">
+        <h2>Pro：AI 增强</h2>
+        <span class="muted">key 只存在你这台设备的浏览器里</span>
+      </div>
+      <div class="row">
+        <label class="field field-inline field-grow">
+          <span class="field-label">API Key</span>
+          <input id="pro-key" type="password" autocomplete="off" placeholder="sk-...">
+        </label>
+        <label class="field field-inline">
+          <span class="field-label">模型</span>
+          <input id="pro-model" type="text" value="deepseek-chat">
+        </label>
+      </div>
+      <label class="field">
+        <span class="field-label">接口地址（OpenAI 兼容）</span>
+        <input id="pro-base" type="text" value="https://api.deepseek.com/v1">
+      </label>
+      <div class="actions">
+        <button id="pro-save" class="btn">保存到本机</button>
+        <button id="pro-clear" class="btn btn-ghost">清除</button>
+        <span id="pro-note" class="hint"></span>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>Flash 完全离线：不联网、不要 key、不发任何请求。Pro 才会把这段话发给你自己填的那家模型厂商。</p>
+    </footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

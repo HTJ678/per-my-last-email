@@ -1,0 +1,4758 @@
+[
+  {
+    "id": "chase-reply",
+    "intent": "催对方回复消息",
+    "keywords": [
+      "回我",
+      "回复",
+      "reply",
+      "get back to me",
+      "还没回",
+      "已读不回"
+    ],
+    "scenarios": [
+      "email",
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "follow-up",
+      "delay"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你怎么还没回我",
+        "en": "You still haven't gotten back to me."
+      },
+      {
+        "tone": 33,
+        "zh": "有空回我一下呀",
+        "en": "Would you mind getting back to me when you get a chance?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请确认是否已收到并审阅此前邮件",
+        "en": "Could you kindly confirm whether you've had a chance to review my previous email?"
+      },
+      {
+        "tone": 100,
+        "zh": "谨再次跟进我上一封邮件，以免它不幸被淹没在收件箱里",
+        "en": "Just following up on my last email, in case it got buried in your inbox."
+      }
+    ]
+  },
+  {
+    "id": "chase-file",
+    "intent": "催对方发文件",
+    "keywords": [
+      "文件",
+      "附件",
+      "材料",
+      "发我",
+      "file",
+      "attach"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "follow-up",
+      "materials"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "文件还没发我",
+        "en": "You still haven't sent me the file."
+      },
+      {
+        "tone": 33,
+        "zh": "文件方便的时候发我一下",
+        "en": "Could you send the file over when you have a moment?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请提供相关文件以供存档",
+        "en": "Please forward the relevant documents at your earliest convenience."
+      },
+      {
+        "tone": 100,
+        "zh": "为便于我持续推进，烦请惠赐此前所提及之文件",
+        "en": "To help me keep things moving, please don't forget the file you mentioned."
+      }
+    ]
+  },
+  {
+    "id": "chase-payment",
+    "intent": "催付款",
+    "keywords": [
+      "付款",
+      "打款",
+      "尾款",
+      "钱没到",
+      "payment",
+      "invoice paid"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "money",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "钱还没到",
+        "en": "The payment hasn't come through yet."
+      },
+      {
+        "tone": 33,
+        "zh": "麻烦帮忙看下付款进度哈",
+        "en": "Could you check on the payment status for me?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请确认款项是否已安排支付",
+        "en": "Could you please confirm whether the payment has been scheduled?"
+      },
+      {
+        "tone": 100,
+        "zh": "发票早已寄出，想必付款已在流程中，烦请告知最新进展",
+        "en": "The invoice went out a while ago, so I assume payment is in progress — a brief update would be appreciated."
+      }
+    ]
+  },
+  {
+    "id": "chase-progress",
+    "intent": "催进度",
+    "keywords": [
+      "进度",
+      "进展",
+      "到哪了",
+      "做得怎么样",
+      "progress",
+      "update"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "follow-up",
+      "status"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你进度到哪了",
+        "en": "Where are you with this?"
+      },
+      {
+        "tone": 33,
+        "zh": "想问问现在到哪一步了",
+        "en": "Just wondering where things stand?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请同步当前进展及预计完成时间",
+        "en": "Please share a status update along with your estimated completion date."
+      },
+      {
+        "tone": 100,
+        "zh": "只想确认一下这个项目是否仍在推进之中",
+        "en": "Just want to confirm the project is still moving forward."
+      }
+    ]
+  },
+  {
+    "id": "resend-email",
+    "intent": "重发邮件",
+    "keywords": [
+      "没收到",
+      "重发",
+      "再发一次",
+      "resend",
+      "didn't receive"
+    ],
+    "scenarios": [
+      "email"
+    ],
+    "tags": [
+      "email",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你没收到吗，我再发一遍",
+        "en": "You didn't get it? I'll send it again."
+      },
+      {
+        "tone": 33,
+        "zh": "我这边显示已发送，要不我重发一下",
+        "en": "It shows as sent on my end — let me resend it just in case."
+      },
+      {
+        "tone": 66,
+        "zh": "如有必要，烦请告知，我将重新发送该邮件",
+        "en": "Please let me know if needed and I will resend the email."
+      },
+      {
+        "tone": 100,
+        "zh": "既然原邮件似乎未曾送达，现将全文再次附上，以供参考",
+        "en": "Since the original appears not to have arrived, I've reattached it below for your reference."
+      }
+    ]
+  },
+  {
+    "id": "request-receipt",
+    "intent": "请求确认收到",
+    "keywords": [
+      "收到没",
+      "确认收到",
+      "收到吗",
+      "receipt",
+      "acknowledge"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "confirmation"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你到底收到没有",
+        "en": "Did you actually get it or not?"
+      },
+      {
+        "tone": 33,
+        "zh": "收到的话跟我说一声哈",
+        "en": "Let me know once you've got it."
+      },
+      {
+        "tone": 66,
+        "zh": "烦请确认是否已收悉",
+        "en": "Kindly confirm receipt."
+      },
+      {
+        "tone": 100,
+        "zh": "烦请惠予确认，以便我这边闭环",
+        "en": "A brief confirmation would allow me to close the loop on my end."
+      }
+    ]
+  },
+  {
+    "id": "ask-deadline",
+    "intent": "追问截止时间",
+    "keywords": [
+      "什么时候要",
+      "截止",
+      "deadline",
+      "最晚"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "planning"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "什么时候要",
+        "en": "When do you need it?"
+      },
+      {
+        "tone": 33,
+        "zh": "想问下最晚什么时候要呀",
+        "en": "What's the latest you'd need it?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请告知截止时间，以便我安排",
+        "en": "Could you please advise on the deadline so I can plan accordingly?"
+      },
+      {
+        "tone": 100,
+        "zh": "如能告知时间线，我这边会更好地配合您",
+        "en": "If you could share the timeline, I'd be in a much better position to accommodate you."
+      }
+    ]
+  },
+  {
+    "id": "second-reminder",
+    "intent": "二次催办",
+    "keywords": [
+      "第二次",
+      "又催",
+      "再提醒",
+      "reminder again",
+      "following up again"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "follow-up",
+      "reminder"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我又来催了",
+        "en": "Here I am, nagging again."
+      },
+      {
+        "tone": 33,
+        "zh": "再提醒一下哈",
+        "en": "Just a gentle reminder."
+      },
+      {
+        "tone": 66,
+        "zh": "顺此再次提醒，烦请留意相关截止时间",
+        "en": "As a follow-up reminder, please note the applicable deadline."
+      },
+      {
+        "tone": 100,
+        "zh": "眼见截止日临近，谨此再次提请关注",
+        "en": "With the deadline approaching, I wanted to flag this once more."
+      }
+    ]
+  },
+  {
+    "id": "follow-up-later",
+    "intent": "对方说过晚点回后的追问",
+    "keywords": [
+      "稍后回复",
+      "晚点回",
+      "再说吧",
+      "said later",
+      "circle back"
+    ],
+    "scenarios": [
+      "email",
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "follow-up",
+      "delay"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你说的稍后到底是多会儿",
+        "en": "So when exactly is \"later\"?"
+      },
+      {
+        "tone": 33,
+        "zh": "之前说稍后回我，有消息了吗",
+        "en": "Any update since you mentioned you'd get back to me?"
+      },
+      {
+        "tone": 66,
+        "zh": "就此前您表示将另行答复之事项，烦请赐复",
+        "en": "Following up on the matter you said you would revisit."
+      },
+      {
+        "tone": 100,
+        "zh": "一直记挂着您说稍后的那次回复，想确认是否已有下文",
+        "en": "I've been holding onto that \"later\" you mentioned — wondering if it has taken shape."
+      }
+    ]
+  },
+  {
+    "id": "meeting-minutes",
+    "intent": "会后追问会议纪要",
+    "keywords": [
+      "会议纪要",
+      "会议记录",
+      "minutes",
+      "会议总结"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "meeting",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "纪要呢",
+        "en": "Where are the minutes?"
+      },
+      {
+        "tone": 33,
+        "zh": "麻烦把今天的会议纪要发一下哈",
+        "en": "Could you send over today's meeting notes?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请提供本次会议纪要及待办事项",
+        "en": "Please circulate the minutes and action items from our meeting."
+      },
+      {
+        "tone": 100,
+        "zh": "为便于各方对齐，烦请分享会上所记之事",
+        "en": "To make sure everyone stays aligned, could you share what was captured in the meeting?"
+      }
+    ]
+  },
+  {
+    "id": "fill-materials",
+    "intent": "请求补交材料",
+    "keywords": [
+      "补材料",
+      "材料缺",
+      "还差",
+      "补充材料"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "materials"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "材料还缺东西",
+        "en": "The materials are still missing something."
+      },
+      {
+        "tone": 33,
+        "zh": "材料还差一点，麻烦补一下哈",
+        "en": "The materials are almost there — could you fill in the gap?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请补齐所缺材料，以便流程推进",
+        "en": "Please submit the outstanding materials so we can proceed."
+      },
+      {
+        "tone": 100,
+        "zh": "为免审核环节反复往返，烦请一次补齐所缺材料",
+        "en": "To spare us a few more rounds, please send the missing materials in one go."
+      }
+    ]
+  },
+  {
+    "id": "chase-signature",
+    "intent": "催签字",
+    "keywords": [
+      "签字",
+      "签一下",
+      "还没签",
+      "sign"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "signature",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你还没签",
+        "en": "You still haven't signed it."
+      },
+      {
+        "tone": 33,
+        "zh": "方便的时候签一下哈",
+        "en": "Whenever you're free, could you sign it?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请签署并回传该文件",
+        "en": "Please sign and return the document."
+      },
+      {
+        "tone": 100,
+        "zh": "文件已在您处停留数日，烦请安排签署",
+        "en": "The document has been sitting with you for a few days — your signature would be appreciated."
+      }
+    ]
+  },
+  {
+    "id": "chase-approval",
+    "intent": "催审批",
+    "keywords": [
+      "审批",
+      "批一下",
+      "还没批",
+      "approve"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "approval",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "还没批",
+        "en": "It still hasn't been approved."
+      },
+      {
+        "tone": 33,
+        "zh": "帮忙点一下审批哈",
+        "en": "Could you go ahead and approve it?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请审核批准，以便进入下一阶段",
+        "en": "Please review and approve so we can move to the next stage."
+      },
+      {
+        "tone": 100,
+        "zh": "流程目前停在您这一步，烦请拨冗审批",
+        "en": "The process is currently sitting with you — please review at your convenience."
+      }
+    ]
+  },
+  {
+    "id": "chase-feedback",
+    "intent": "催反馈意见",
+    "keywords": [
+      "反馈",
+      "意见",
+      "怎么看",
+      "feedback"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "feedback",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "反馈呢",
+        "en": "Where's the feedback?"
+      },
+      {
+        "tone": 33,
+        "zh": "有什么想法随时跟我说哈",
+        "en": "Let me know your thoughts whenever."
+      },
+      {
+        "tone": 66,
+        "zh": "烦请提供反馈意见，以供后续修改",
+        "en": "Please share your feedback so I can incorporate it."
+      },
+      {
+        "tone": 100,
+        "zh": "若无进一步意见，我将视为已获认可并继续推进",
+        "en": "Absent further comments, I'll take it as approved and proceed."
+      }
+    ]
+  },
+  {
+    "id": "chase-invoice",
+    "intent": "催开发票",
+    "keywords": [
+      "发票",
+      "开票",
+      "invoice"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "money",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "发票还没开",
+        "en": "The invoice still hasn't been issued."
+      },
+      {
+        "tone": 33,
+        "zh": "发票麻烦开一下哈",
+        "en": "Could you get the invoice issued?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请开具发票，以便安排付款",
+        "en": "Please issue the invoice so payment can be arranged."
+      },
+      {
+        "tone": 100,
+        "zh": "款在等票，票一到即可安排",
+        "en": "The payment is waiting on the invoice — once it lands, I can move it right through."
+      }
+    ]
+  },
+  {
+    "id": "chase-quote",
+    "intent": "催报价",
+    "keywords": [
+      "报价",
+      "多少钱",
+      "quote",
+      "pricing"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "money",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "价格还没给我",
+        "en": "I still don't have your price."
+      },
+      {
+        "tone": 33,
+        "zh": "报价方便的时候发我哈",
+        "en": "Could you send the quote over when you can?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请提供报价单，以便内部评估",
+        "en": "Please provide a quotation for our internal review."
+      },
+      {
+        "tone": 100,
+        "zh": "预算会议就在前头，缺您这份报价我很难推进",
+        "en": "My budget meeting is coming up — hard to move it forward without your quote."
+      }
+    ]
+  },
+  {
+    "id": "chase-contract",
+    "intent": "催签合同",
+    "keywords": [
+      "合同",
+      "contract",
+      "签约"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "signature",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "合同还没签回来",
+        "en": "The contract hasn't come back signed."
+      },
+      {
+        "tone": 33,
+        "zh": "合同那边有进展了吗",
+        "en": "Any progress on the contract?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请确认合同签署状态",
+        "en": "Please confirm the status of the contract signing."
+      },
+      {
+        "tone": 100,
+        "zh": "合同已在流转中，烦请告知是否还有需要我配合之处",
+        "en": "The contract is in circulation — let me know if anything on my side is still needed."
+      }
+    ]
+  },
+  {
+    "id": "chase-scheduling",
+    "intent": "催排期",
+    "keywords": [
+      "排期",
+      "什么时候开始",
+      "schedule",
+      "档期"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "planning",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "到底什么时候开始",
+        "en": "So when does this actually start?"
+      },
+      {
+        "tone": 33,
+        "zh": "排期定了吗",
+        "en": "Has the schedule been set?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请告知排期安排，以便协调资源",
+        "en": "Please advise on the schedule so resources can be coordinated."
+      },
+      {
+        "tone": 100,
+        "zh": "资源这边一直在待命，烦请尽早明确档期",
+        "en": "My team has been standing by — an early confirmation of the schedule would help."
+      }
+    ]
+  },
+  {
+    "id": "chase-confirmation",
+    "intent": "催对方确认细节",
+    "keywords": [
+      "确认一下",
+      "对吗",
+      "是不是",
+      "confirm"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "confirmation"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你倒是确认一下",
+        "en": "Just confirm it already."
+      },
+      {
+        "tone": 33,
+        "zh": "麻烦确认一下哈",
+        "en": "Could you confirm for me?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请书面确认以上内容",
+        "en": "Please confirm the above in writing."
+      },
+      {
+        "tone": 100,
+        "zh": "若未收到异议，我将按此执行",
+        "en": "If I don't hear otherwise, I'll proceed on this basis."
+      }
+    ]
+  },
+  {
+    "id": "polite-push",
+    "intent": "礼貌催办推进",
+    "keywords": [
+      "催一下",
+      "推进",
+      "盯一下",
+      "push forward"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "这事得催一下了",
+        "en": "Time to push on this."
+      },
+      {
+        "tone": 33,
+        "zh": "帮忙盯着点呗",
+        "en": "Could you keep an eye on this for me?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请协助推进该事项",
+        "en": "Please help move this forward."
+      },
+      {
+        "tone": 100,
+        "zh": "鉴于时间已相当紧张，烦请优先处理",
+        "en": "Given how tight things are, I'd appreciate this being prioritized."
+      }
+    ]
+  },
+  {
+    "id": "ask-eta",
+    "intent": "问预计完成时间",
+    "keywords": [
+      "还要多久",
+      "预计",
+      "多久能",
+      "eta"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "planning",
+      "status"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "还要多久",
+        "en": "How much longer?"
+      },
+      {
+        "tone": 33,
+        "zh": "大概还要多久呀",
+        "en": "Roughly how much longer do you think?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请提供预计完成时间",
+        "en": "Please provide an estimated completion date."
+      },
+      {
+        "tone": 100,
+        "zh": "如能给出一个大致时间，我这边也好向上交代",
+        "en": "A rough date would help me manage expectations on my side."
+      }
+    ]
+  },
+  {
+    "id": "chase-third-party",
+    "intent": "催第三方提供东西",
+    "keywords": [
+      "对方还没给",
+      "第三方",
+      "外部",
+      "供应商"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "follow-up",
+      "external"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "对方还没给",
+        "en": "They still haven't sent it."
+      },
+      {
+        "tone": 33,
+        "zh": "对方那边有消息了吗",
+        "en": "Any word from them?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请协助催促对方提供所需材料",
+        "en": "Please help follow up with them for the required materials."
+      },
+      {
+        "tone": 100,
+        "zh": "此事目前卡在对方一侧，烦请协助推动",
+        "en": "This is currently stuck on the other side — some help pushing would go a long way."
+      }
+    ]
+  },
+  {
+    "id": "remind-meeting",
+    "intent": "提醒对方开会",
+    "keywords": [
+      "别忘了开会",
+      "会议提醒",
+      "别忘了",
+      "reminder meeting"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "meeting",
+      "reminder"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别忘了开会",
+        "en": "Don't forget the meeting."
+      },
+      {
+        "tone": 33,
+        "zh": "提醒一下，等会儿有会哈",
+        "en": "Quick reminder about the meeting."
+      },
+      {
+        "tone": 66,
+        "zh": "谨此提醒今日会议安排，烦请准时出席",
+        "en": "A reminder of today's meeting — timely attendance is appreciated."
+      },
+      {
+        "tone": 100,
+        "zh": "会议上会用到您此前提及的那份资料，麻烦备好",
+        "en": "We'll be needing the document you mentioned — please have it on hand."
+      }
+    ]
+  },
+  {
+    "id": "after-deadline",
+    "intent": "过了截止时间温和问责",
+    "keywords": [
+      "过截止",
+      "超期",
+      "来不及了",
+      "past the deadline"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "delay",
+      "accountability"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "早就过截止时间了",
+        "en": "It's way past the deadline."
+      },
+      {
+        "tone": 33,
+        "zh": "好像已经过时间了，那边情况怎么样",
+        "en": "Looks like we're past the deadline — what's the situation?"
+      },
+      {
+        "tone": 66,
+        "zh": "该事项已超出约定时间，烦请说明情况",
+        "en": "This item has exceeded the agreed deadline; please advise."
+      },
+      {
+        "tone": 100,
+        "zh": "原定时间已过，不知是否需要重新安排计划",
+        "en": "The original date has come and gone — perhaps the plan needs revisiting."
+      }
+    ]
+  },
+  {
+    "id": "chase-weekly",
+    "intent": "催定期汇报",
+    "keywords": [
+      "周报",
+      "每日汇报",
+      "同步一下",
+      "weekly report"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "reporting",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "周报呢",
+        "en": "Where's the weekly report?"
+      },
+      {
+        "tone": 33,
+        "zh": "周报方便发一下哈",
+        "en": "Could you send the weekly update?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请按约定提交周报",
+        "en": "Please submit the weekly report as agreed."
+      },
+      {
+        "tone": 100,
+        "zh": "顺带提醒，周报是每周固定项，不是可选项",
+        "en": "Just a reminder that the weekly report is a standing item, not an optional one."
+      }
+    ]
+  },
+  {
+    "id": "chase-refund",
+    "intent": "催退款",
+    "keywords": [
+      "退款",
+      "退钱",
+      "把钱退",
+      "refund"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "money",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "钱还没退",
+        "en": "The refund still hasn't come through."
+      },
+      {
+        "tone": 33,
+        "zh": "想问下退款进度哈",
+        "en": "Any update on the refund?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请告知退款处理进展",
+        "en": "Please advise on the status of the refund."
+      },
+      {
+        "tone": 100,
+        "zh": "退款申请已提交有一阵了，烦请协助推动",
+        "en": "The refund request has been sitting for a while — some help moving it along would be great."
+      }
+    ]
+  },
+  {
+    "id": "ask-availability",
+    "intent": "问对方什么时候有空",
+    "keywords": [
+      "有空吗",
+      "时间方便",
+      "available",
+      "什么时候方便"
+    ],
+    "scenarios": [
+      "email",
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "scheduling"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你有空吗",
+        "en": "Are you free or not?"
+      },
+      {
+        "tone": 33,
+        "zh": "最近哪天有空呀",
+        "en": "Which day works for you?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请告知您方便的时间段",
+        "en": "Please let me know a time that works for you."
+      },
+      {
+        "tone": 100,
+        "zh": "我这边时间比较灵活，以您为准就好",
+        "en": "My calendar is flexible — I'll work around yours."
+      }
+    ]
+  },
+  {
+    "id": "request-intro",
+    "intent": "请求帮忙引荐",
+    "keywords": [
+      "引荐",
+      "介绍认识",
+      "牵线",
+      "introduction"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "network"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "帮我介绍一下",
+        "en": "Introduce me to them."
+      },
+      {
+        "tone": 33,
+        "zh": "能帮我引荐一下吗",
+        "en": "Would you mind introducing me?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请代为引荐，不胜感激",
+        "en": "I'd be grateful if you could make an introduction."
+      },
+      {
+        "tone": 100,
+        "zh": "如果方便，可否帮忙牵个线？相信对双方都值得",
+        "en": "If it's not too much trouble, a quick intro could be worthwhile for both sides."
+      }
+    ]
+  },
+  {
+    "id": "chase-rsvp",
+    "intent": "催对方确认是否参加",
+    "keywords": [
+      "来不来",
+      "参加吗",
+      "出席",
+      "rsvp"
+    ],
+    "scenarios": [
+      "email",
+      "friend"
+    ],
+    "tags": [
+      "confirmation",
+      "event"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你到底来不来",
+        "en": "Are you coming or not?"
+      },
+      {
+        "tone": 33,
+        "zh": "来不来跟我说一声哈",
+        "en": "Let me know if you can make it."
+      },
+      {
+        "tone": 66,
+        "zh": "烦请确认是否出席，以便安排",
+        "en": "Please confirm your attendance so I can plan accordingly."
+      },
+      {
+        "tone": 100,
+        "zh": "座位和材料都按人数备好了，烦请尽早回复",
+        "en": "Seats and materials are set by headcount — an early reply would help."
+      }
+    ]
+  },
+  {
+    "id": "nudge-upward",
+    "intent": "客气地催上级看东西",
+    "keywords": [
+      "请您看",
+      "领导看",
+      "汇报",
+      "上级"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "escalation"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "想请您看一下",
+        "en": "Could you take a look?"
+      },
+      {
+        "tone": 33,
+        "zh": "想请您抽空看一下哈",
+        "en": "Would you have a moment to take a look?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请您拨冗审阅并给予指示",
+        "en": "I'd appreciate your review and guidance at your convenience."
+      },
+      {
+        "tone": 100,
+        "zh": "深知您日程繁忙，谨附上摘要以便快速过目",
+        "en": "I know your schedule is full — a summary is attached so it's a quick read."
+      }
+    ]
+  },
+  {
+    "id": "refuse-help",
+    "intent": "拒绝帮对方做事",
+    "keywords": [
+      "帮我做",
+      "帮我一下",
+      "你能帮我",
+      "help me with"
+    ],
+    "scenarios": [
+      "email",
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不想帮",
+        "en": "I don't want to help."
+      },
+      {
+        "tone": 33,
+        "zh": "这次可能帮不上哈",
+        "en": "I probably can't help with this one."
+      },
+      {
+        "tone": 66,
+        "zh": "抱歉，此事恕难协助",
+        "en": "Unfortunately, I'm unable to assist with this."
+      },
+      {
+        "tone": 100,
+        "zh": "相信您能理解，我这边资源的优先级已经排满了",
+        "en": "I'm sure you'll understand — my priorities are fully allocated at the moment."
+      }
+    ]
+  },
+  {
+    "id": "refuse-overtime",
+    "intent": "拒绝加班",
+    "keywords": [
+      "加班",
+      "留下来加",
+      "晚点走",
+      "overtime",
+      "stay late"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不想加班",
+        "en": "I'm not working overtime."
+      },
+      {
+        "tone": 33,
+        "zh": "今天可能加不了班哈",
+        "en": "I can't stay late today, sorry."
+      },
+      {
+        "tone": 66,
+        "zh": "今日无法额外加班，烦请另行安排",
+        "en": "I'm unable to work additional hours today; please plan accordingly."
+      },
+      {
+        "tone": 100,
+        "zh": "长期加班的可持续性问题，值得我们一起看一看",
+        "en": "The sustainability of ongoing overtime might be worth a conversation."
+      }
+    ]
+  },
+  {
+    "id": "refuse-lend-money",
+    "intent": "拒绝借钱",
+    "keywords": [
+      "借钱",
+      "借我点",
+      "先垫一下",
+      "lend me"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "money"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我没钱借你",
+        "en": "I don't have money to lend you."
+      },
+      {
+        "tone": 33,
+        "zh": "最近手头也紧，帮不上了",
+        "en": "I'm stretched thin myself right now, so I can't help."
+      },
+      {
+        "tone": 66,
+        "zh": "很抱歉，此事我恐怕无法应允",
+        "en": "I'm afraid I'm not in a position to accommodate this."
+      },
+      {
+        "tone": 100,
+        "zh": "朋友之间谈钱容易伤感情，我宁愿不冒这个险",
+        "en": "Money tends to complicate friendships — I'd rather not risk ours."
+      }
+    ]
+  },
+  {
+    "id": "refuse-do-it-for-you",
+    "intent": "拒绝替对方做",
+    "keywords": [
+      "帮我写完",
+      "替我",
+      "帮我做了",
+      "do it for me"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你自己做",
+        "en": "Do it yourself."
+      },
+      {
+        "tone": 33,
+        "zh": "这次还是你自己来吧，我可以教你怎么弄",
+        "en": "This one's better done by you — I'm happy to show you how."
+      },
+      {
+        "tone": 66,
+        "zh": "基于职责划分，此事需由您方完成",
+        "en": "Given the division of responsibilities, this needs to be handled on your side."
+      },
+      {
+        "tone": 100,
+        "zh": "我把方法写下来了，你自己做一遍比我替你做还快",
+        "en": "I've written down the method — doing it once yourself will be faster than me doing it for you."
+      }
+    ]
+  },
+  {
+    "id": "decline-invite",
+    "intent": "拒绝邀约",
+    "keywords": [
+      "一起去",
+      "你来吗",
+      "约吗",
+      "wanna come",
+      "一起去吧"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "invite"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不去",
+        "en": "I'm not going."
+      },
+      {
+        "tone": 33,
+        "zh": "这次就不去啦，下次约",
+        "en": "I'll sit this one out — next time."
+      },
+      {
+        "tone": 66,
+        "zh": "感谢邀请，惜此次恐难出席",
+        "en": "Thank you for the invitation; unfortunately I won't be able to attend."
+      },
+      {
+        "tone": 100,
+        "zh": "心意收到了，日程实在腾不出，改天我做东",
+        "en": "I appreciate the thought — my schedule just won't budge. My treat next time."
+      }
+    ]
+  },
+  {
+    "id": "decline-meeting",
+    "intent": "拒绝参加会议",
+    "keywords": [
+      "开个会",
+      "拉个会",
+      "参加这个会",
+      "meeting invite"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "meeting"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "这个会我不想开",
+        "en": "I don't want this meeting."
+      },
+      {
+        "tone": 33,
+        "zh": "这个会我可能参加不了，有别的办法吗",
+        "en": "I might not be able to make this — is there another way?"
+      },
+      {
+        "tone": 66,
+        "zh": "该时段已有安排，烦请提供会议记录",
+        "en": "I have a conflict at that time; please share the notes instead."
+      },
+      {
+        "tone": 100,
+        "zh": "若无必须我出席的议题，可否先同步材料？",
+        "en": "Unless my presence is required, could we start with the materials?"
+      }
+    ]
+  },
+  {
+    "id": "decline-pitch",
+    "intent": "拒绝推销",
+    "keywords": [
+      "推销",
+      "了解一下我们的产品",
+      "推广",
+      "promotion"
+    ],
+    "scenarios": [
+      "email",
+      "comment"
+    ],
+    "tags": [
+      "refuse",
+      "sales"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不需要",
+        "en": "Not interested."
+      },
+      {
+        "tone": 33,
+        "zh": "谢谢，暂时用不上哈",
+        "en": "Thanks, but I don't need it right now."
+      },
+      {
+        "tone": 66,
+        "zh": "感谢推荐，暂无相关需求",
+        "en": "Thank you; I have no current need for this."
+      },
+      {
+        "tone": 100,
+        "zh": "我留着您的联系方式，有需要的时候会主动找您",
+        "en": "I'll keep your contact — I'll reach out if the need arises."
+      }
+    ]
+  },
+  {
+    "id": "decline-scope-creep",
+    "intent": "拒绝临时加需求",
+    "keywords": [
+      "再加个功能",
+      "顺便做",
+      "再多做点",
+      "one more feature"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "scope"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "又加需求？",
+        "en": "Adding more again?"
+      },
+      {
+        "tone": 33,
+        "zh": "这个可以，但得算进下一期哈",
+        "en": "That's doable, but it would need to go into the next cycle."
+      },
+      {
+        "tone": 66,
+        "zh": "该项超出既定范围，需另行走变更流程",
+        "en": "This falls outside the agreed scope and would require a change request."
+      },
+      {
+        "tone": 100,
+        "zh": "范围一旦松动，时间和质量就得有一样让步，您倾向哪个？",
+        "en": "Once scope loosens, either time or quality has to give — which would you prefer?"
+      }
+    ]
+  },
+  {
+    "id": "decline-discount",
+    "intent": "拒绝降价",
+    "keywords": [
+      "便宜点",
+      "打折",
+      "降价",
+      "discount",
+      "少收点"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "money"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不降价",
+        "en": "I'm not lowering the price."
+      },
+      {
+        "tone": 33,
+        "zh": "价格这边确实没什么空间了",
+        "en": "There really isn't any room on the price."
+      },
+      {
+        "tone": 66,
+        "zh": "该报价已是我们的最优方案",
+        "en": "The quotation reflects our best possible terms."
+      },
+      {
+        "tone": 100,
+        "zh": "降价的另一面通常是降低标准，我猜您更在意后者",
+        "en": "Lowering the price usually means lowering the standard — I assume you'd rather not."
+      }
+    ]
+  },
+  {
+    "id": "decline-extend",
+    "intent": "拒绝对方延期请求",
+    "keywords": [
+      "延后",
+      "能不能拖",
+      "再给几天",
+      "extend the deadline"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "deadline"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不能再拖了",
+        "en": "No more extensions."
+      },
+      {
+        "tone": 33,
+        "zh": "时间这边实在挪不动了",
+        "en": "I really can't move the timeline."
+      },
+      {
+        "tone": 66,
+        "zh": "原定时间无法顺延，烦请按计划执行",
+        "en": "The agreed timeline cannot be extended; please proceed as planned."
+      },
+      {
+        "tone": 100,
+        "zh": "每往后一天，成本都落在后面的人身上",
+        "en": "Every extra day comes out of someone else's pocket."
+      }
+    ]
+  },
+  {
+    "id": "refuse-take-blame",
+    "intent": "拒绝背锅",
+    "keywords": [
+      "是你的责任",
+      "怪你",
+      "背锅",
+      "your fault"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "refuse",
+      "accountability"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "这不是我的锅",
+        "en": "That's not on me."
+      },
+      {
+        "tone": 33,
+        "zh": "这事好像不全在我这边哈",
+        "en": "I don't think this one's entirely on me."
+      },
+      {
+        "tone": 66,
+        "zh": "该环节的交接记录，我可以一并提供",
+        "en": "I can share the handover records for that step."
+      },
+      {
+        "tone": 100,
+        "zh": "责任归属讲清楚了，事情才好往前走",
+        "en": "Once ownership is clear, the work can actually move forward."
+      }
+    ]
+  },
+  {
+    "id": "refuse-password",
+    "intent": "拒绝给账号密码",
+    "keywords": [
+      "密码",
+      "账号给我",
+      "帮我登",
+      "password",
+      "log in"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse",
+      "security"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不给",
+        "en": "No."
+      },
+      {
+        "tone": 33,
+        "zh": "密码这种东西我不太方便给哈",
+        "en": "I'm not comfortable sharing passwords."
+      },
+      {
+        "tone": 66,
+        "zh": "出于安全规范，账号恕不外借",
+        "en": "Per security policy, account credentials cannot be shared."
+      },
+      {
+        "tone": 100,
+        "zh": "借号一旦出问题，担责的是我，所以我只能守住这条线",
+        "en": "If anything goes wrong with the account, it lands on me — so I have to hold this line."
+      }
+    ]
+  },
+  {
+    "id": "refuse-transfer",
+    "intent": "拒绝转岗调岗",
+    "keywords": [
+      "转岗",
+      "调去",
+      "换部门",
+      "transfer"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "career"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不去",
+        "en": "I'm not transferring."
+      },
+      {
+        "tone": 33,
+        "zh": "这个岗位我暂时没打算哈",
+        "en": "That role isn't in my plans right now."
+      },
+      {
+        "tone": 66,
+        "zh": "感谢考虑，惜与个人规划不符",
+        "en": "Thank you for considering me; this doesn't align with my current plans."
+      },
+      {
+        "tone": 100,
+        "zh": "我更想在现在这条线上做出成绩，希望理解",
+        "en": "I'd rather build something concrete where I am — I hope that's understandable."
+      }
+    ]
+  },
+  {
+    "id": "refuse-call",
+    "intent": "拒绝打电话",
+    "keywords": [
+      "打个电话",
+      "语音说",
+      "电话说",
+      "give me a call"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse",
+      "channel"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别打电话",
+        "en": "Don't call me."
+      },
+      {
+        "tone": 33,
+        "zh": "电话不太方便，文字说吧",
+        "en": "A call's not convenient — text works better."
+      },
+      {
+        "tone": 66,
+        "zh": "目前不便通话，烦请以书面形式沟通",
+        "en": "I'm unavailable for a call; please communicate in writing."
+      },
+      {
+        "tone": 100,
+        "zh": "打字能留下记录，对我们双方都省事",
+        "en": "Written messages leave a record — easier for both of us."
+      }
+    ]
+  },
+  {
+    "id": "refuse-wechat",
+    "intent": "拒绝加私人联系方式",
+    "keywords": [
+      "加个微信",
+      "加好友",
+      "私下联系",
+      "add my wechat"
+    ],
+    "scenarios": [
+      "colleague",
+      "comment"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不加",
+        "en": "I'm not adding you."
+      },
+      {
+        "tone": 33,
+        "zh": "我这边不太加微信哈",
+        "en": "I don't really add people on WeChat."
+      },
+      {
+        "tone": 66,
+        "zh": "后续沟通请走官方渠道",
+        "en": "Please use the official channel going forward."
+      },
+      {
+        "tone": 100,
+        "zh": "保持流程内沟通，对双方都是保护",
+        "en": "Keeping things in-channel protects us both."
+      }
+    ]
+  },
+  {
+    "id": "end-chat",
+    "intent": "结束闲聊",
+    "keywords": [
+      "不聊了",
+      "聊到这儿",
+      "到此为止",
+      "done chatting"
+    ],
+    "scenarios": [
+      "friend",
+      "comment"
+    ],
+    "tags": [
+      "end",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不聊了",
+        "en": "I'm done chatting."
+      },
+      {
+        "tone": 33,
+        "zh": "我先忙别的去啦",
+        "en": "I'll go take care of something else."
+      },
+      {
+        "tone": 66,
+        "zh": "此事如无其他事项，先告一段落",
+        "en": "If there's nothing further, let's leave it here."
+      },
+      {
+        "tone": 100,
+        "zh": "时间留给更重要的事吧",
+        "en": "I'll leave your time to something more important."
+      }
+    ]
+  },
+  {
+    "id": "end-meeting",
+    "intent": "结束会议",
+    "keywords": [
+      "会就到这",
+      "结束会议",
+      "散会",
+      "wrap up the meeting"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "end",
+      "meeting"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "会就开到这",
+        "en": "Let's end the meeting here."
+      },
+      {
+        "tone": 33,
+        "zh": "要不我们先到这儿哈",
+        "en": "Shall we wrap up here?"
+      },
+      {
+        "tone": 66,
+        "zh": "如无其他议题，本次会议到此结束",
+        "en": "If there are no other items, we'll close the meeting here."
+      },
+      {
+        "tone": 100,
+        "zh": "会议精简一点，大家的时间都更值钱",
+        "en": "Keeping meetings lean makes everyone's time worth more."
+      }
+    ]
+  },
+  {
+    "id": "end-thread",
+    "intent": "结束邮件往来",
+    "keywords": [
+      "别再回了",
+      "不用回复",
+      "不用回",
+      "no reply needed"
+    ],
+    "scenarios": [
+      "email"
+    ],
+    "tags": [
+      "end",
+      "email"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别回了",
+        "en": "Don't reply."
+      },
+      {
+        "tone": 33,
+        "zh": "这条不用回啦",
+        "en": "No need to reply to this one."
+      },
+      {
+        "tone": 66,
+        "zh": "本邮件无需回复",
+        "en": "No response is required to this email."
+      },
+      {
+        "tone": 100,
+        "zh": "就此收尾，不再往复，节省彼此时间",
+        "en": "Let's close the thread here and save us both the back-and-forth."
+      }
+    ]
+  },
+  {
+    "id": "set-work-boundary",
+    "intent": "划清工作边界",
+    "keywords": [
+      "下班后找我",
+      "周末问我",
+      "非工作时间",
+      "after hours"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "下班别找我",
+        "en": "Don't contact me after hours."
+      },
+      {
+        "tone": 33,
+        "zh": "下班之后我一般不看消息哈",
+        "en": "I usually don't check messages after work."
+      },
+      {
+        "tone": 66,
+        "zh": "非工作时间的信息，我将于次个工作日回复",
+        "en": "Messages outside working hours will be answered the next business day."
+      },
+      {
+        "tone": 100,
+        "zh": "我什么时候回消息，既关乎效率，也关乎能不能长久做下去",
+        "en": "When I reply has to do with efficiency — and with staying sustainable."
+      }
+    ]
+  },
+  {
+    "id": "refuse-weekend",
+    "intent": "拒绝周末工作",
+    "keywords": [
+      "周末来做",
+      "周六加班",
+      "周末加班",
+      "weekend work"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "周末我不干活",
+        "en": "I don't work weekends."
+      },
+      {
+        "tone": 33,
+        "zh": "周末我一般不安排工作哈",
+        "en": "I don't usually schedule work on weekends."
+      },
+      {
+        "tone": 66,
+        "zh": "周末无法安排工作时间",
+        "en": "I'm unable to schedule work time over the weekend."
+      },
+      {
+        "tone": 100,
+        "zh": "周末恢复得好，周一的产出才对得起大家",
+        "en": "A properly recovered weekend is what makes Monday's output worth anything."
+      }
+    ]
+  },
+  {
+    "id": "refuse-queue-jump",
+    "intent": "拒绝插队加急",
+    "keywords": [
+      "先给我弄",
+      "插个队",
+      "加急",
+      "priority now"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不能插队",
+        "en": "No queue-jumping."
+      },
+      {
+        "tone": 33,
+        "zh": "前面还有人在等，得按顺序来哈",
+        "en": "There are people ahead of you — order matters."
+      },
+      {
+        "tone": 66,
+        "zh": "请按既定顺序处理",
+        "en": "Please respect the established queue."
+      },
+      {
+        "tone": 100,
+        "zh": "如果给您破例，就得有人替您等",
+        "en": "If I make an exception for you, someone else waits in your place."
+      }
+    ]
+  },
+  {
+    "id": "refuse-extra-task",
+    "intent": "拒绝额外任务",
+    "keywords": [
+      "顺便再做个",
+      "再加个活",
+      "多担待",
+      "one more thing"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "refuse",
+      "workload"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我没空",
+        "en": "I don't have time."
+      },
+      {
+        "tone": 33,
+        "zh": "手上已经排满了，这个可能得往后放",
+        "en": "I'm fully booked — this would have to wait."
+      },
+      {
+        "tone": 66,
+        "zh": "新增事项需重新评估优先级与排期",
+        "en": "New items require a re-evaluation of priorities and scheduling."
+      },
+      {
+        "tone": 100,
+        "zh": "我的容量是有限的，加进去的每件事都会挤掉另一件",
+        "en": "My capacity is finite — everything added displaces something else."
+      }
+    ]
+  },
+  {
+    "id": "refuse-free-work",
+    "intent": "拒绝免费干活",
+    "keywords": [
+      "免费帮个忙",
+      "先做出来看看",
+      "不收钱",
+      "do it for free"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse",
+      "money"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不白干",
+        "en": "I don't work for free."
+      },
+      {
+        "tone": 33,
+        "zh": "这次可能得走正常流程哈",
+        "en": "This would need to go through the normal process."
+      },
+      {
+        "tone": 66,
+        "zh": "该项工作需以正式委托形式进行",
+        "en": "This work would require a formal engagement."
+      },
+      {
+        "tone": 100,
+        "zh": "免费的东西通常没人当真，我不想那样",
+        "en": "Free work rarely gets taken seriously — I'd rather avoid that."
+      }
+    ]
+  },
+  {
+    "id": "refuse-quick-favor",
+    "intent": "拒绝顺手的小忙",
+    "keywords": [
+      "就一下",
+      "很快的",
+      "顺手",
+      "just a sec"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "没有顺手这回事",
+        "en": "There's no such thing as a quick favor."
+      },
+      {
+        "tone": 33,
+        "zh": "这种顺手的事我最近真挤不出时间哈",
+        "en": "I genuinely can't squeeze in favors right now."
+      },
+      {
+        "tone": 66,
+        "zh": "此类请求需纳入正式排期",
+        "en": "Requests of this kind need to go through the usual queue."
+      },
+      {
+        "tone": 100,
+        "zh": "每次都说很快，加起来就是我整个下午",
+        "en": "Every \"quick\" adds up to my entire afternoon."
+      }
+    ]
+  },
+  {
+    "id": "refuse-middleman",
+    "intent": "拒绝当中间人传话",
+    "keywords": [
+      "帮我问问",
+      "你去说",
+      "转达一下",
+      "pass it on"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别让我传话",
+        "en": "Don't make me the messenger."
+      },
+      {
+        "tone": 33,
+        "zh": "这事你们直接说会更好哈",
+        "en": "You two are better off talking directly."
+      },
+      {
+        "tone": 66,
+        "zh": "建议由当事双方直接沟通",
+        "en": "I'd suggest the parties communicate directly."
+      },
+      {
+        "tone": 100,
+        "zh": "话经我这一手，传到最后一定变味",
+        "en": "Anything passed through me changes shape by the time it lands."
+      }
+    ]
+  },
+  {
+    "id": "refuse-promise",
+    "intent": "拒绝做保证",
+    "keywords": [
+      "你保证",
+      "一定能行",
+      "给我个准话",
+      "promise me"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "refuse",
+      "commitment"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不保证",
+        "en": "I'm not promising anything."
+      },
+      {
+        "tone": 33,
+        "zh": "我只能说尽力哈",
+        "en": "All I can say is I'll try."
+      },
+      {
+        "tone": 66,
+        "zh": "此事我无法作出承诺",
+        "en": "I'm not in a position to make that commitment."
+      },
+      {
+        "tone": 100,
+        "zh": "我不想说漂亮话，到时候兑现不了更难看",
+        "en": "I'd rather not say something nice now and look bad later."
+      }
+    ]
+  },
+  {
+    "id": "refuse-gossip",
+    "intent": "拒绝议论他人",
+    "keywords": [
+      "你觉得他怎么样",
+      "你听说了吗",
+      "八卦",
+      "gossip"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不评论别人",
+        "en": "I don't comment on people."
+      },
+      {
+        "tone": 33,
+        "zh": "这个我就不评价了哈",
+        "en": "I'll stay out of that one."
+      },
+      {
+        "tone": 66,
+        "zh": "关于他人之事，我不便置评",
+        "en": "I'm not in a position to comment on others."
+      },
+      {
+        "tone": 100,
+        "zh": "背后说的话，迟早会走到当事人耳朵里",
+        "en": "Whatever's said behind someone's back tends to reach them eventually."
+      }
+    ]
+  },
+  {
+    "id": "refuse-takeover",
+    "intent": "拒绝临时接手项目",
+    "keywords": [
+      "你来接手",
+      "临时拉你",
+      "你来做吧",
+      "take over"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "refuse",
+      "workload"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不接",
+        "en": "I'm not taking it."
+      },
+      {
+        "tone": 33,
+        "zh": "这个我可能接不了哈",
+        "en": "I probably can't pick this up right now."
+      },
+      {
+        "tone": 66,
+        "zh": "目前无法承接该项工作",
+        "en": "I'm unable to take this on at present."
+      },
+      {
+        "tone": 100,
+        "zh": "半路接手，前面欠下的账都得我来还",
+        "en": "Picking it up mid-way means inheriting whatever's owed on it."
+      }
+    ]
+  },
+  {
+    "id": "refuse-photo",
+    "intent": "拒绝被拍照",
+    "keywords": [
+      "拍一张",
+      "合影",
+      "拍个照",
+      "photo"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "privacy"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别拍我",
+        "en": "Don't photograph me."
+      },
+      {
+        "tone": 33,
+        "zh": "我不太喜欢拍照哈",
+        "en": "I'd rather not be in photos."
+      },
+      {
+        "tone": 66,
+        "zh": "恕不参与拍摄",
+        "en": "I'd prefer not to be photographed."
+      },
+      {
+        "tone": 100,
+        "zh": "我留给自己的东西不多，影像就免了吧",
+        "en": "I keep very little to myself — let me keep this."
+      }
+    ]
+  },
+  {
+    "id": "decline-politely-generic",
+    "intent": "通用客气拒绝",
+    "keywords": [
+      "能不能帮",
+      "麻烦你",
+      "求你了",
+      "can you please"
+    ],
+    "scenarios": [
+      "email",
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不行",
+        "en": "No."
+      },
+      {
+        "tone": 33,
+        "zh": "这次真的帮不上，抱歉哈",
+        "en": "I really can't this time, sorry."
+      },
+      {
+        "tone": 66,
+        "zh": "很遗憾，此事我无法协助",
+        "en": "I'm sorry — I'm unable to assist with this."
+      },
+      {
+        "tone": 100,
+        "zh": "这句抱歉我已经说得很熟练了，希望您别再多问",
+        "en": "I've gotten quite good at saying sorry for this — I'd rather not be asked again."
+      }
+    ]
+  },
+  {
+    "id": "express-dissatisfaction",
+    "intent": "表达不满",
+    "keywords": [
+      "我很不满",
+      "不满意",
+      "有点失望",
+      "dissatisfied"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我很不满意",
+        "en": "I'm not happy about this."
+      },
+      {
+        "tone": 33,
+        "zh": "说实话我有点失望哈",
+        "en": "Honestly, I'm a bit disappointed."
+      },
+      {
+        "tone": 66,
+        "zh": "就此事，我需正式表达我的关切",
+        "en": "I need to formally register my concerns on this matter."
+      },
+      {
+        "tone": 100,
+        "zh": "我尽量把话说得客气，但标准我是不会往下降的",
+        "en": "I'll keep this polite, but the standard is staying where it is."
+      }
+    ]
+  },
+  {
+    "id": "blame-delay",
+    "intent": "指责对方拖延",
+    "keywords": [
+      "一直拖",
+      "拖到现在",
+      "迟迟不",
+      "keep delaying"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "complaint",
+      "delay"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你一直在拖",
+        "en": "You keep dragging this out."
+      },
+      {
+        "tone": 33,
+        "zh": "这个拖得有点久了哈",
+        "en": "This has been dragging on a while."
+      },
+      {
+        "tone": 66,
+        "zh": "该事项推进节奏已明显偏离预期",
+        "en": "The pace of this item has diverged noticeably from expectations."
+      },
+      {
+        "tone": 100,
+        "zh": "我猜时间在您那边不是成本，但在我这边是",
+        "en": "I gather time isn't a cost on your side — it is on mine."
+      }
+    ]
+  },
+  {
+    "id": "blame-blame-shift",
+    "intent": "指责对方甩锅",
+    "keywords": [
+      "甩锅",
+      "推给我",
+      "都怪别人",
+      "pass the buck"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint",
+      "accountability"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别甩锅",
+        "en": "Stop passing the buck."
+      },
+      {
+        "tone": 33,
+        "zh": "这事好像被推到我头上了哈",
+        "en": "This seems to have landed on me."
+      },
+      {
+        "tone": 66,
+        "zh": "责任链条上我只占一环，烦请一并说明其余环节",
+        "en": "I'm one link in this chain — please account for the rest as well."
+      },
+      {
+        "tone": 100,
+        "zh": "每次都恰好是我这一环出问题，这概率有点太低了",
+        "en": "It's remarkable how often my link is the one that fails."
+      }
+    ]
+  },
+  {
+    "id": "blame-credit",
+    "intent": "指责对方抢功",
+    "keywords": [
+      "抢功",
+      "变成他的功劳",
+      "took credit"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "那是我的功劳",
+        "en": "That was my work."
+      },
+      {
+        "tone": 33,
+        "zh": "这块好像是我做的哈",
+        "en": "I think I did that part."
+      },
+      {
+        "tone": 66,
+        "zh": "该部分工作由我完成，烦请在记录中一并体现",
+        "en": "That portion was completed by me; please reflect it in the record."
+      },
+      {
+        "tone": 100,
+        "zh": "我记性还不错，谁做了什么我记得挺清楚",
+        "en": "My memory's decent — I remember who did what quite well."
+      }
+    ]
+  },
+  {
+    "id": "blame-unprofessional",
+    "intent": "指责对方不专业",
+    "keywords": [
+      "不专业",
+      "太业余",
+      "粗糙",
+      "unprofessional"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "complaint",
+      "quality"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你太不专业了",
+        "en": "That's unprofessional."
+      },
+      {
+        "tone": 33,
+        "zh": "这个环节好像粗糙了点哈",
+        "en": "This part came out a bit rough."
+      },
+      {
+        "tone": 66,
+        "zh": "交付质量与约定标准存在差距",
+        "en": "The deliverable falls short of the agreed standard."
+      },
+      {
+        "tone": 100,
+        "zh": "我对您的专业水准一向高看，这次就当成失误吧",
+        "en": "I've always held your work in high regard — I'll assume this was a slip."
+      }
+    ]
+  },
+  {
+    "id": "blame-changed-again",
+    "intent": "指责对方反复改需求",
+    "keywords": [
+      "又改了",
+      "反复改",
+      "一会儿这样一会儿那样",
+      "changed again"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "complaint",
+      "scope"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你到底要什么",
+        "en": "What do you actually want?"
+      },
+      {
+        "tone": 33,
+        "zh": "需求又变了哈",
+        "en": "The requirements changed again."
+      },
+      {
+        "tone": 66,
+        "zh": "需求多次变动已影响既定排期",
+        "en": "Repeated requirement changes have affected the agreed schedule."
+      },
+      {
+        "tone": 100,
+        "zh": "如果每次改动都是免费的，那最后的账单只能由质量来付",
+        "en": "If every change is free, the final bill gets paid in quality."
+      }
+    ]
+  },
+  {
+    "id": "blame-interrupt",
+    "intent": "指责对方打断自己",
+    "keywords": [
+      "打断我",
+      "插话",
+      "别插嘴",
+      "interrupted me"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别打断我",
+        "en": "Stop interrupting me."
+      },
+      {
+        "tone": 33,
+        "zh": "让我先把这句说完哈",
+        "en": "Let me finish this one."
+      },
+      {
+        "tone": 66,
+        "zh": "烦请容我把话讲完",
+        "en": "Please allow me to finish."
+      },
+      {
+        "tone": 100,
+        "zh": "我讲完这段大概还要三十秒，这点时间应该挤得出来",
+        "en": "I need about thirty seconds to finish — surely we can spare that."
+      }
+    ]
+  },
+  {
+    "id": "blame-late-meeting",
+    "intent": "指责对方开会迟到",
+    "keywords": [
+      "迟到",
+      "来晚了",
+      "又迟",
+      "late again"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint",
+      "meeting"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你又迟到了",
+        "en": "You're late again."
+      },
+      {
+        "tone": 33,
+        "zh": "今天等了一会儿哈",
+        "en": "We waited a bit today."
+      },
+      {
+        "tone": 66,
+        "zh": "会议已按约定时间开始，烦请日后准时出席",
+        "en": "The meeting began as scheduled; please arrive on time going forward."
+      },
+      {
+        "tone": 100,
+        "zh": "等您的那些分钟，是所有人一起付的",
+        "en": "Those minutes waiting for you were paid for by everyone."
+      }
+    ]
+  },
+  {
+    "id": "blame-ghosting",
+    "intent": "指责对方装死不理",
+    "keywords": [
+      "装死",
+      "不理我",
+      "消失",
+      "ghosting"
+    ],
+    "scenarios": [
+      "email",
+      "friend"
+    ],
+    "tags": [
+      "complaint",
+      "delay"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你装死呢",
+        "en": "So you're just ghosting me."
+      },
+      {
+        "tone": 33,
+        "zh": "你这几天好像没动静哈",
+        "en": "Haven't heard from you in a few days."
+      },
+      {
+        "tone": 66,
+        "zh": "多次尝试联系未获回复，烦请告知当前状态",
+        "en": "Multiple attempts to reach you have gone unanswered; please advise."
+      },
+      {
+        "tone": 100,
+        "zh": "邮件和消息都发过了，我猜您只是太忙，忙到看见了也不方便回",
+        "en": "I've tried email and messages — I assume you're just too busy to reply even when you see it."
+      }
+    ]
+  },
+  {
+    "id": "blame-perfunctory",
+    "intent": "指责对方敷衍",
+    "keywords": [
+      "敷衍",
+      "随便应付",
+      "回个好的",
+      "perfunctory"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你在敷衍我",
+        "en": "You're fobbing me off."
+      },
+      {
+        "tone": 33,
+        "zh": "这个回复好像有点简单哈",
+        "en": "The reply felt a little thin."
+      },
+      {
+        "tone": 66,
+        "zh": "该回复未涵盖所提问题，烦请逐条答复",
+        "en": "The response didn't address the questions raised; please answer point by point."
+      },
+      {
+        "tone": 100,
+        "zh": "一个字也算回复，但不算解决",
+        "en": "One word counts as a reply, not as a resolution."
+      }
+    ]
+  },
+  {
+    "id": "blame-no-show",
+    "intent": "指责对方失约",
+    "keywords": [
+      "放我鸽子",
+      "没来",
+      "失约",
+      "stood me up"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你放我鸽子",
+        "en": "You stood me up."
+      },
+      {
+        "tone": 33,
+        "zh": "昨天没等到你哈",
+        "en": "I didn't see you yesterday."
+      },
+      {
+        "tone": 66,
+        "zh": "昨日约定未能履行，烦请说明",
+        "en": "Yesterday's arrangement wasn't honored; please explain."
+      },
+      {
+        "tone": 100,
+        "zh": "那个时间段我已经专门留出来了，希望下次能提前说一声",
+        "en": "I'd already set that time aside for us — a heads-up next time would help."
+      }
+    ]
+  },
+  {
+    "id": "blame-told-you-so",
+    "intent": "回应对方说早说过",
+    "keywords": [
+      "我早说过",
+      "我跟你说过",
+      "told you so"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你也没早说啊",
+        "en": "You didn't say that either."
+      },
+      {
+        "tone": 33,
+        "zh": "是说过，但当时好像没定下来哈",
+        "en": "You mentioned it, though nothing was settled."
+      },
+      {
+        "tone": 66,
+        "zh": "该点在当时的记录中并无确认，烦请提供依据",
+        "en": "That point wasn't confirmed in the record; please provide the reference."
+      },
+      {
+        "tone": 100,
+        "zh": "事后说早说过，是最省力的一种正确",
+        "en": "Claiming you said so is the cheapest kind of being right."
+      }
+    ]
+  },
+  {
+    "id": "blame-skip-level",
+    "intent": "指责对方越级",
+    "keywords": [
+      "越级",
+      "直接找领导",
+      "绕过我",
+      "went over my head"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你别越级",
+        "en": "Don't go over my head."
+      },
+      {
+        "tone": 33,
+        "zh": "这事其实先跟我说就行哈",
+        "en": "It'd have been easier to come to me first."
+      },
+      {
+        "tone": 66,
+        "zh": "后续此类事项烦请遵循既定汇报路径",
+        "en": "Please follow the established reporting line for matters like this."
+      },
+      {
+        "tone": 100,
+        "zh": "绕过去当然更快，但流程存在的意义就在这种时候",
+        "en": "Going around is faster — which is exactly when process matters."
+      }
+    ]
+  },
+  {
+    "id": "blame-talk-over",
+    "intent": "指责对方抢话",
+    "keywords": [
+      "抢话",
+      "不让我说",
+      "talk over me"
+    ],
+    "scenarios": [
+      "colleague"
+    ],
+    "tags": [
+      "complaint",
+      "meeting"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你倒是让我说",
+        "en": "Let me get a word in."
+      },
+      {
+        "tone": 33,
+        "zh": "我这边还有一句没说完哈",
+        "en": "I still haven't finished a thought."
+      },
+      {
+        "tone": 66,
+        "zh": "烦请给予各方均等的发言时间",
+        "en": "Please allow equal speaking time for everyone."
+      },
+      {
+        "tone": 100,
+        "zh": "会上说话最多的人，往往准备得最少",
+        "en": "The loudest in the room is usually the least prepared."
+      }
+    ]
+  },
+  {
+    "id": "blame-shirk",
+    "intent": "指责对方推卸责任",
+    "keywords": [
+      "不是我负责",
+      "不归我管",
+      "推卸",
+      "not my job"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint",
+      "accountability"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别推",
+        "en": "Don't dodge it."
+      },
+      {
+        "tone": 33,
+        "zh": "这事好像还是得有人管哈",
+        "en": "Someone still needs to own this."
+      },
+      {
+        "tone": 66,
+        "zh": "该事项需明确责任人，烦请指派",
+        "en": "This needs a clear owner; please assign one."
+      },
+      {
+        "tone": 100,
+        "zh": "人人都说不是自己的事，那它就永远是所有人的事",
+        "en": "If it's nobody's job, it stays everyone's problem."
+      }
+    ]
+  },
+  {
+    "id": "blame-wrong-info",
+    "intent": "指责对方给错信息",
+    "keywords": [
+      "给错信息",
+      "信息不对",
+      "误导我",
+      "misled me"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你给的信息是错的",
+        "en": "Your information was wrong."
+      },
+      {
+        "tone": 33,
+        "zh": "这个信息跟实际好像不太一样哈",
+        "en": "That info doesn't quite match reality."
+      },
+      {
+        "tone": 66,
+        "zh": "所提供信息与实际情况存在出入，烦请核实",
+        "en": "The information provided diverges from the facts; please verify."
+      },
+      {
+        "tone": 100,
+        "zh": "我是按您说的做的，结果只能由您来解释",
+        "en": "I did what you said — the result is yours to explain."
+      }
+    ]
+  },
+  {
+    "id": "blame-passive-aggressive",
+    "intent": "回应对方的阴阳怪气",
+    "keywords": [
+      "阴阳我",
+      "阴阳怪气",
+      "话里有话",
+      "passive aggressive"
+    ],
+    "scenarios": [
+      "colleague",
+      "comment"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "有话直说",
+        "en": "Say it to my face."
+      },
+      {
+        "tone": 33,
+        "zh": "有话咱们直接说哈",
+        "en": "Let's just say things plainly."
+      },
+      {
+        "tone": 66,
+        "zh": "如有意见，欢迎直接提出以便讨论",
+        "en": "If you have concerns, please raise them directly."
+      },
+      {
+        "tone": 100,
+        "zh": "弦外之音我听得懂，只是不太想配合这场演奏",
+        "en": "I hear the subtext — I just don't care to play along."
+      }
+    ]
+  },
+  {
+    "id": "blame-guilt-trip",
+    "intent": "回应道德绑架",
+    "keywords": [
+      "道德绑架",
+      "你不帮我就是",
+      "你好意思吗",
+      "guilt trip"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "complaint",
+      "boundary"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别绑架我",
+        "en": "Stop guilt-tripping me."
+      },
+      {
+        "tone": 33,
+        "zh": "这事别拿感情说事哈",
+        "en": "Let's not bring feelings into this."
+      },
+      {
+        "tone": 66,
+        "zh": "请就事论事，不作情感层面的推论",
+        "en": "Please keep to the facts and avoid emotional inference."
+      },
+      {
+        "tone": 100,
+        "zh": "说得我好像欠您似的，可我记得账不是这么记的",
+        "en": "You make it sound like I owe you — the ledger looks different to me."
+      }
+    ]
+  },
+  {
+    "id": "blame-pie-in-sky",
+    "intent": "回应对方画饼",
+    "keywords": [
+      "画饼",
+      "以后给你",
+      "等做大了",
+      "someday"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别画饼",
+        "en": "Stop selling me a dream."
+      },
+      {
+        "tone": 33,
+        "zh": "这话听着不错，就是有点远哈",
+        "en": "Sounds nice, just a bit far off."
+      },
+      {
+        "tone": 66,
+        "zh": "烦请提供具体的资源与时间安排",
+        "en": "Please specify the concrete resources and timeline."
+      },
+      {
+        "tone": 100,
+        "zh": "饼画得再圆，也得先告诉我面粉在哪儿",
+        "en": "A pie is only as good as the flour behind it — where's the flour?"
+      }
+    ]
+  },
+  {
+    "id": "blame-rushing-me",
+    "intent": "回应对方催自己",
+    "keywords": [
+      "催我",
+      "你快点",
+      "怎么还没好",
+      "rushing me"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别催了",
+        "en": "Stop rushing me."
+      },
+      {
+        "tone": 33,
+        "zh": "已经在弄了哈，别急",
+        "en": "It's in progress — no need to rush."
+      },
+      {
+        "tone": 66,
+        "zh": "该项工作正在按计划推进，烦请耐心等待",
+        "en": "This is progressing as planned; your patience is appreciated."
+      },
+      {
+        "tone": 100,
+        "zh": "催我并不会让它变快，只会让我多想一遍要不要接下一件",
+        "en": "Rushing me doesn't speed it up — it just makes me think twice about the next one."
+      }
+    ]
+  },
+  {
+    "id": "blame-read-no-reply",
+    "intent": "指责对方已读不回",
+    "keywords": [
+      "已读不回",
+      "看了不回",
+      "read and ignored"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "complaint",
+      "delay"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你看了不回",
+        "en": "You read it and didn't reply."
+      },
+      {
+        "tone": 33,
+        "zh": "显示已读了，是漏看了吗",
+        "en": "It shows as read — did it slip by?"
+      },
+      {
+        "tone": 66,
+        "zh": "该消息已显示已读，烦请回复",
+        "en": "The message shows as read; a reply would be appreciated."
+      },
+      {
+        "tone": 100,
+        "zh": "看到了却选择不回，那也是一种回答",
+        "en": "Seeing it and choosing silence is an answer too."
+      }
+    ]
+  },
+  {
+    "id": "blame-last-minute",
+    "intent": "指责对方临时加活",
+    "keywords": [
+      "临时加",
+      "下班前要",
+      "马上要",
+      "dropped on me"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint",
+      "workload"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "每次都临时加",
+        "en": "Always last-minute with you."
+      },
+      {
+        "tone": 33,
+        "zh": "临时加的话时间可能不够哈",
+        "en": "Last-minute makes the timeline tight."
+      },
+      {
+        "tone": 66,
+        "zh": "临时新增事项需提前告知，以便安排",
+        "en": "Additions like this require advance notice for planning."
+      },
+      {
+        "tone": 100,
+        "zh": "您那边是紧急，我这边就得替您紧急",
+        "en": "Your emergency becomes mine by default."
+      }
+    ]
+  },
+  {
+    "id": "blame-inefficiency",
+    "intent": "指责对方低效",
+    "keywords": [
+      "效率太低",
+      "太慢了",
+      "磨叽",
+      "inefficient"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你效率太低",
+        "en": "You're too slow."
+      },
+      {
+        "tone": 33,
+        "zh": "这个节奏是不是能再快点哈",
+        "en": "Could this move a bit faster?"
+      },
+      {
+        "tone": 66,
+        "zh": "当前推进效率已影响整体目标",
+        "en": "The current pace is affecting the overall objective."
+      },
+      {
+        "tone": 100,
+        "zh": "讨论这件事花的时间，已经超过做它需要的时间了",
+        "en": "We've now spent more time discussing this than doing it."
+      }
+    ]
+  },
+  {
+    "id": "blame-repeat-mistake",
+    "intent": "指责对方重复犯错",
+    "keywords": [
+      "又错了",
+      "老犯这个",
+      "每次都这样",
+      "same mistake"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint",
+      "quality"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你又犯同样的错",
+        "en": "You made the same mistake again."
+      },
+      {
+        "tone": 33,
+        "zh": "这个问题好像上次也出现过哈",
+        "en": "This seems to have come up before."
+      },
+      {
+        "tone": 66,
+        "zh": "该问题此前已提出，烦请建立防错机制",
+        "en": "This was raised previously; please put a preventive check in place."
+      },
+      {
+        "tone": 100,
+        "zh": "第一次是失误，第二次就是选择了",
+        "en": "The first time is a mistake; the second is a choice."
+      }
+    ]
+  },
+  {
+    "id": "blame-off-process",
+    "intent": "指责对方不按流程",
+    "keywords": [
+      "不按流程",
+      "跳过流程",
+      "没走审批",
+      "skip the process"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint",
+      "process"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你怎么不按流程来",
+        "en": "Why didn't you follow the process?"
+      },
+      {
+        "tone": 33,
+        "zh": "这个好像没走流程哈",
+        "en": "This seems to have skipped the process."
+      },
+      {
+        "tone": 66,
+        "zh": "该操作未遵循既定流程，烦请补充说明",
+        "en": "This didn't follow the established process; please clarify."
+      },
+      {
+        "tone": 100,
+        "zh": "绕过流程一次很爽，回头补账的时候就没那么爽了",
+        "en": "Skipping the process feels great once — less so when the paperwork comes back."
+      }
+    ]
+  },
+  {
+    "id": "blame-attitude",
+    "intent": "指责对方甩脸色",
+    "keywords": [
+      "甩脸色",
+      "态度差",
+      "给我脸色",
+      "attitude"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你什么态度",
+        "en": "What's with the attitude?"
+      },
+      {
+        "tone": 33,
+        "zh": "刚才语气是不是有点冲哈",
+        "en": "That came across a bit sharp."
+      },
+      {
+        "tone": 66,
+        "zh": "请保持专业、克制的沟通方式",
+        "en": "Please maintain a professional and measured tone."
+      },
+      {
+        "tone": 100,
+        "zh": "情绪我理解，但您把它放在我这儿，我不打算收",
+        "en": "I understand the frustration — I'm just not taking delivery of it."
+      }
+    ]
+  },
+  {
+    "id": "blame-ignoring",
+    "intent": "指责对方装看不见",
+    "keywords": [
+      "装看不见",
+      "当没听见",
+      "ignoring me"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你别装看不见",
+        "en": "Don't pretend you didn't see it."
+      },
+      {
+        "tone": 33,
+        "zh": "这条好像被漏掉了哈",
+        "en": "This one seems to have been missed."
+      },
+      {
+        "tone": 66,
+        "zh": "该请求已被多次提及，烦请正式回应",
+        "en": "This request has been raised repeatedly; please respond formally."
+      },
+      {
+        "tone": 100,
+        "zh": "我可以再发第三遍，只要您愿意让我来当那个啰嗦的人",
+        "en": "I can send it a third time, if you're happy for me to play the nagging one."
+      }
+    ]
+  },
+  {
+    "id": "blame-two-faced",
+    "intent": "指责对方表里不一",
+    "keywords": [
+      "当面一套背后一套",
+      "表里不一",
+      "two-faced"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你当面一套背后一套",
+        "en": "You say one thing and do another."
+      },
+      {
+        "tone": 33,
+        "zh": "您说的和做的好像不太一致哈",
+        "en": "What you said and did don't quite line up."
+      },
+      {
+        "tone": 66,
+        "zh": "口头承诺与实际行动存在差异，烦请澄清",
+        "en": "There's a gap between the verbal commitment and the action taken; please clarify."
+      },
+      {
+        "tone": 100,
+        "zh": "我记性好，两句话我都记得",
+        "en": "My memory is good — I remember both sentences."
+      }
+    ]
+  },
+  {
+    "id": "blame-noted-only",
+    "intent": "指责对方只回收到",
+    "keywords": [
+      "只回收到",
+      "回个收到",
+      "又是收到",
+      "noted again"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "别只回收到",
+        "en": "Don't just say noted."
+      },
+      {
+        "tone": 33,
+        "zh": "收到之外，能给个时间点吗",
+        "en": "Beyond noted — can I get a date?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请就时间与责任人作出明确答复",
+        "en": "Please respond with a clear timeline and owner."
+      },
+      {
+        "tone": 100,
+        "zh": "收到确认的是消息抵达，不是事情开始",
+        "en": "Noted confirms the message arrived, not that anything started."
+      }
+    ]
+  },
+  {
+    "id": "complain-generic",
+    "intent": "通用不满但克制",
+    "keywords": [
+      "这事不行",
+      "我很介意",
+      "不能接受",
+      "not acceptable"
+    ],
+    "scenarios": [
+      "email",
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "complaint"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "这事我不接受",
+        "en": "I won't accept this."
+      },
+      {
+        "tone": 33,
+        "zh": "说实话这个我不太能接受",
+        "en": "Honestly, I can't really accept this."
+      },
+      {
+        "tone": 66,
+        "zh": "就当前安排，我无法认可，烦请重新评估",
+        "en": "I can't endorse the current arrangement; please reassess."
+      },
+      {
+        "tone": 100,
+        "zh": "我通常都很好说话，但通常这两个字现在很关键",
+        "en": "I'm usually easy to work with — the word usually is doing a lot of work right now."
+      }
+    ]
+  },
+  {
+    "id": "apology-late",
+    "intent": "道歉迟到",
+    "keywords": [
+      "迟到了",
+      "来晚了",
+      "抱歉迟到",
+      "sorry I'm late"
+    ],
+    "scenarios": [
+      "colleague",
+      "email",
+      "friend"
+    ],
+    "tags": [
+      "apology"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我迟到了，对不起",
+        "en": "I'm late, sorry."
+      },
+      {
+        "tone": 33,
+        "zh": "抱歉迟到了，路上有点堵",
+        "en": "Sorry I'm late — traffic was rough."
+      },
+      {
+        "tone": 66,
+        "zh": "因交通原因迟到，谨此致歉",
+        "en": "I apologize for my late arrival due to traffic."
+      },
+      {
+        "tone": 100,
+        "zh": "我知道守时是对别人时间最基本的尊重，这次是我没做到",
+        "en": "Being on time is the baseline courtesy — this one's on me."
+      }
+    ]
+  },
+  {
+    "id": "apology-mistake",
+    "intent": "为失误道歉",
+    "keywords": [
+      "我错了",
+      "是我的问题",
+      "我搞错了",
+      "my mistake"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "apology"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "是我错了",
+        "en": "That was my mistake."
+      },
+      {
+        "tone": 33,
+        "zh": "这块是我没做好，抱歉哈",
+        "en": "I didn't get this right — sorry."
+      },
+      {
+        "tone": 66,
+        "zh": "此事系我方失误，谨此致歉并说明补救方案",
+        "en": "This was our error; our apologies, along with a remediation plan."
+      },
+      {
+        "tone": 100,
+        "zh": "我不想用沟通不畅来掩盖它，问题就是我没做对",
+        "en": "I won't hide behind \"miscommunication\" — the problem is I got it wrong."
+      }
+    ]
+  },
+  {
+    "id": "apology-delay",
+    "intent": "为延期道歉",
+    "keywords": [
+      "我做晚了",
+      "交晚了",
+      "延期交付",
+      "delayed"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "apology",
+      "delay"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我交晚了",
+        "en": "I'm delivering late."
+      },
+      {
+        "tone": 33,
+        "zh": "这次比原计划晚了些，抱歉哈",
+        "en": "This ran later than planned, sorry."
+      },
+      {
+        "tone": 66,
+        "zh": "该交付未能按期完成，谨此致歉",
+        "en": "This deliverable could not be completed on time; our apologies."
+      },
+      {
+        "tone": 100,
+        "zh": "延期是我的责任，理由就不列了，新的时间在这里",
+        "en": "The delay is on me — no list of reasons. Here's the new date."
+      }
+    ]
+  },
+  {
+    "id": "request-extension",
+    "intent": "请求延期",
+    "keywords": [
+      "能不能延后",
+      "再给点时间",
+      "延期",
+      "need more time"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "request",
+      "deadline"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我需要更多时间",
+        "en": "I need more time."
+      },
+      {
+        "tone": 33,
+        "zh": "能不能再给几天时间哈",
+        "en": "Could I get a few more days?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请酌情延长交付时间至指定日期",
+        "en": "Please consider extending the deadline to the date specified."
+      },
+      {
+        "tone": 100,
+        "zh": "现在交出去的东西我自己都不满意，多三天对大家都更好",
+        "en": "I'm not satisfied with what I'd hand in today — three more days serves everyone better."
+      }
+    ]
+  },
+  {
+    "id": "request-resource",
+    "intent": "请求资源支持",
+    "keywords": [
+      "给我点人",
+      "要资源",
+      "需要预算",
+      "need resources"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "request"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "给我资源",
+        "en": "Give me resources."
+      },
+      {
+        "tone": 33,
+        "zh": "这边能不能再给点支持哈",
+        "en": "Could I get a bit more support here?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请评估增加相关资源投入的可行性",
+        "en": "Please assess the feasibility of additional resource allocation."
+      },
+      {
+        "tone": 100,
+        "zh": "目标不变、资源不减，结果只能是这样，您来选",
+        "en": "Same target, same resources, this outcome — your call."
+      }
+    ]
+  },
+  {
+    "id": "request-help",
+    "intent": "请求协助",
+    "keywords": [
+      "帮我一下",
+      "需要帮忙",
+      "能不能协助",
+      "need help"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "request"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "帮我一下",
+        "en": "Help me out."
+      },
+      {
+        "tone": 33,
+        "zh": "这边想请你帮个忙哈",
+        "en": "Could I ask you for a hand?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请协助处理相关事项",
+        "en": "Please assist with the matter in question."
+      },
+      {
+        "tone": 100,
+        "zh": "我卡在这儿好一会儿了，可能你五分钟就解决了",
+        "en": "I've been stuck here a while — five minutes of yours would crack it."
+      }
+    ]
+  },
+  {
+    "id": "request-clarify",
+    "intent": "请求澄清",
+    "keywords": [
+      "没听懂",
+      "什么意思",
+      "能说清楚吗",
+      "unclear"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "request",
+      "clarify"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我没听懂",
+        "en": "I don't understand."
+      },
+      {
+        "tone": 33,
+        "zh": "这块我想再确认一下哈",
+        "en": "Could I double-check this part?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请就该点作进一步说明",
+        "en": "Please provide further clarification on this point."
+      },
+      {
+        "tone": 100,
+        "zh": "我不想按自己的猜想去执行，所以先问清楚",
+        "en": "I'd rather ask than guess and then redo it."
+      }
+    ]
+  },
+  {
+    "id": "request-backing",
+    "intent": "请求上级支持",
+    "keywords": [
+      "请领导支持",
+      "需要您出面",
+      "帮我说句话",
+      "need your backing"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "request",
+      "escalation"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你得出面",
+        "en": "You need to step in."
+      },
+      {
+        "tone": 33,
+        "zh": "这事能不能请您帮着说一句哈",
+        "en": "Could you lend a word on this?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请就此事给予必要支持",
+        "en": "I'd appreciate your necessary support on this matter."
+      },
+      {
+        "tone": 100,
+        "zh": "我该做的都做了，剩下的部分只有您的分量推得动",
+        "en": "I've done what I can — the rest needs your weight behind it."
+      }
+    ]
+  },
+  {
+    "id": "ask-raise",
+    "intent": "含蓄提加薪",
+    "keywords": [
+      "涨工资",
+      "加薪",
+      "薪酬调整",
+      "raise"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "career"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我要涨工资",
+        "en": "I want a raise."
+      },
+      {
+        "tone": 33,
+        "zh": "想聊聊薪资这块哈",
+        "en": "Could we talk about compensation?"
+      },
+      {
+        "tone": 66,
+        "zh": "希望就薪酬水平进行一次正式沟通",
+        "en": "I'd like to discuss my compensation formally."
+      },
+      {
+        "tone": 100,
+        "zh": "我这一年做了什么您看得到，我想聊聊它对应的价值",
+        "en": "You've seen what I did this year — I'd like to discuss what it's worth."
+      }
+    ]
+  },
+  {
+    "id": "ask-recommendation",
+    "intent": "请求推荐信",
+    "keywords": [
+      "写推荐信",
+      "推荐信",
+      "帮我推荐",
+      "recommendation letter"
+    ],
+    "scenarios": [
+      "email"
+    ],
+    "tags": [
+      "request",
+      "career"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "帮我写封推荐信",
+        "en": "Write me a recommendation letter."
+      },
+      {
+        "tone": 33,
+        "zh": "方便的话能帮我写封推荐信吗",
+        "en": "Would you be able to write me a recommendation?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请惠赐推荐信，所需材料我可一并准备",
+        "en": "I'd be grateful for a letter of recommendation; I'll prepare any materials needed."
+      },
+      {
+        "tone": 100,
+        "zh": "我会把材料备齐，尽量不占用您太多时间",
+        "en": "I'll have everything ready so it takes as little of your time as possible."
+      }
+    ]
+  },
+  {
+    "id": "resign",
+    "intent": "辞职沟通",
+    "keywords": [
+      "辞职",
+      "离职",
+      "不干了",
+      "resign"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "career"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不干了",
+        "en": "I quit."
+      },
+      {
+        "tone": 33,
+        "zh": "想跟您聊一下我的离职安排",
+        "en": "I'd like to talk about my departure."
+      },
+      {
+        "tone": 66,
+        "zh": "现正式提出辞呈，烦请告知后续流程",
+        "en": "I'm formally submitting my resignation; please advise on next steps."
+      },
+      {
+        "tone": 100,
+        "zh": "这段时间我从这儿学到不少，也希望能好聚好散",
+        "en": "I've learned a lot here — I'd like us to part well."
+      }
+    ]
+  },
+  {
+    "id": "accept-criticism",
+    "intent": "接受批评",
+    "keywords": [
+      "批评我",
+      "接受意见",
+      "我改",
+      "criticism"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "feedback"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "行，我知道了",
+        "en": "Fine, I get it."
+      },
+      {
+        "tone": 33,
+        "zh": "你说得对，我改哈",
+        "en": "You're right — I'll fix it."
+      },
+      {
+        "tone": 66,
+        "zh": "感谢指正，我将据此调整",
+        "en": "Thank you for the correction; I'll adjust accordingly."
+      },
+      {
+        "tone": 100,
+        "zh": "这条我认，另外还有两条也想请您一并看看",
+        "en": "I'll take that — and I'd like your read on two others as well."
+      }
+    ]
+  },
+  {
+    "id": "raise-objection",
+    "intent": "提出异议",
+    "keywords": [
+      "我不同意",
+      "有异议",
+      "这样不行",
+      "objection"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "feedback"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不同意",
+        "en": "I disagree."
+      },
+      {
+        "tone": 33,
+        "zh": "我这边有点不一样的想法哈",
+        "en": "I see it a bit differently."
+      },
+      {
+        "tone": 66,
+        "zh": "就该方案，我持保留意见，理由如下",
+        "en": "I have reservations about this proposal, for the following reasons."
+      },
+      {
+        "tone": 100,
+        "zh": "如果大家都没意见，就更该有人把风险讲清楚，我来当这个人",
+        "en": "If everyone agrees, someone should still name the risk — I'll be that person."
+      }
+    ]
+  },
+  {
+    "id": "point-out-error",
+    "intent": "指出对方错误",
+    "keywords": [
+      "你写错了",
+      "这里是错的",
+      "有误",
+      "typo"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "feedback"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你写错了",
+        "en": "You made an error here."
+      },
+      {
+        "tone": 33,
+        "zh": "这个地方好像有点小问题哈",
+        "en": "This part looks slightly off."
+      },
+      {
+        "tone": 66,
+        "zh": "该处数据存在偏差，烦请核对",
+        "en": "There's a discrepancy in this figure; please verify."
+      },
+      {
+        "tone": 100,
+        "zh": "帮您标出来了，改不改由您，但记录上我得留一句",
+        "en": "I've flagged it — your call whether to change it, but I'll note it for the record."
+      }
+    ]
+  },
+  {
+    "id": "give-suggestion",
+    "intent": "提出建议",
+    "keywords": [
+      "建议",
+      "我觉得可以",
+      "不如",
+      "suggestion"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "feedback"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我觉得应该这样",
+        "en": "I think it should be done this way."
+      },
+      {
+        "tone": 33,
+        "zh": "我有个小建议哈",
+        "en": "I have a small suggestion."
+      },
+      {
+        "tone": 66,
+        "zh": "谨提出以下建议，供参考",
+        "en": "I'd like to offer the following suggestions for consideration."
+      },
+      {
+        "tone": 100,
+        "zh": "我的建议可能不讨喜，但它比事后返工便宜",
+        "en": "My suggestion may not be welcome, but it's cheaper than redoing this later."
+      }
+    ]
+  },
+  {
+    "id": "request-decision",
+    "intent": "催对方做决定",
+    "keywords": [
+      "你定吧",
+      "决定了吗",
+      "拍板",
+      "make a decision"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "request",
+      "follow-up"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你赶紧定",
+        "en": "Just decide already."
+      },
+      {
+        "tone": 33,
+        "zh": "这个得您拍板哈",
+        "en": "This one's your call."
+      },
+      {
+        "tone": 66,
+        "zh": "烦请就该事项作出决定，以便后续推进",
+        "en": "Please make a decision on this so we can proceed."
+      },
+      {
+        "tone": 100,
+        "zh": "我这边所有选项都摆好了，等的只是一个决定",
+        "en": "All the options are on the table — only a decision is outstanding."
+      }
+    ]
+  },
+  {
+    "id": "disagree-politely",
+    "intent": "委婉表达不同意见",
+    "keywords": [
+      "不太同意",
+      "我有不同看法",
+      "respectfully",
+      "different view"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "feedback"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我不同意",
+        "en": "I don't agree."
+      },
+      {
+        "tone": 33,
+        "zh": "我可能想法不太一样哈",
+        "en": "I might see it differently."
+      },
+      {
+        "tone": 66,
+        "zh": "对此我持不同看法，理由如下",
+        "en": "I see this differently, and here's why."
+      },
+      {
+        "tone": 100,
+        "zh": "我完全理解这个方向的好处，只是担心它只在幻灯片上成立",
+        "en": "I fully see the appeal — I'm just worried it only works on the slide."
+      }
+    ]
+  },
+  {
+    "id": "clear-misunderstanding",
+    "intent": "澄清误会",
+    "keywords": [
+      "你误会了",
+      "我没那个意思",
+      "misunderstanding"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "clarify"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你误会了",
+        "en": "You've got it wrong."
+      },
+      {
+        "tone": 33,
+        "zh": "可能我表达得不清楚哈",
+        "en": "I may not have said it clearly."
+      },
+      {
+        "tone": 66,
+        "zh": "谨此澄清：此前表述并非您所理解之意",
+        "en": "To clarify: my earlier wording did not mean what it was taken to mean."
+      },
+      {
+        "tone": 100,
+        "zh": "与其猜我在想什么，不如直接问我，答案不会咬人",
+        "en": "Rather than guess at my intent, just ask — the answer doesn't bite."
+      }
+    ]
+  },
+  {
+    "id": "deny-blame-kindly",
+    "intent": "客气地不背锅",
+    "keywords": [
+      "这不是我的错",
+      "别怪我",
+      "not my fault"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "accountability"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "这不是我的错",
+        "en": "That's not my fault."
+      },
+      {
+        "tone": 33,
+        "zh": "这事我这边好像没问题哈",
+        "en": "I don't think this came from my side."
+      },
+      {
+        "tone": 66,
+        "zh": "就该环节，我方可提供完整记录以供核对",
+        "en": "We can provide complete records for that step for verification."
+      },
+      {
+        "tone": 100,
+        "zh": "我接受被批评，但不接受被错误地批评，这是两件事",
+        "en": "I accept criticism — just not inaccurate criticism. Those are two things."
+      }
+    ]
+  },
+  {
+    "id": "request-written-confirmation",
+    "intent": "要求书面确认",
+    "keywords": [
+      "发个邮件确认",
+      "写下来",
+      "书面",
+      "in writing"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "confirmation"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你得写下来",
+        "en": "Put it in writing."
+      },
+      {
+        "tone": 33,
+        "zh": "方便的话发个文字确认哈",
+        "en": "Could you confirm that in writing?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请以邮件形式确认上述内容",
+        "en": "Please confirm the above by email."
+      },
+      {
+        "tone": 100,
+        "zh": "口头说过的容易记不住，写下来的才算数",
+        "en": "Spoken things get forgotten; written ones count."
+      }
+    ]
+  },
+  {
+    "id": "insist-process",
+    "intent": "要求按流程走",
+    "keywords": [
+      "得按流程",
+      "走审批",
+      "补个流程",
+      "follow the process"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "process"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "得走流程",
+        "en": "It has to go through the process."
+      },
+      {
+        "tone": 33,
+        "zh": "这个还是得走一下流程哈",
+        "en": "This still needs to go through the process."
+      },
+      {
+        "tone": 66,
+        "zh": "该项需按既定流程办理",
+        "en": "This must be handled per the established process."
+      },
+      {
+        "tone": 100,
+        "zh": "我理解想快，但流程本来就是为慢的时候准备的",
+        "en": "I understand wanting speed — the process exists for when things go wrong."
+      }
+    ]
+  },
+  {
+    "id": "decline-gracefully",
+    "intent": "婉拒邀约并致谢",
+    "keywords": [
+      "谢谢邀请",
+      "可惜去不了",
+      "thanks for inviting"
+    ],
+    "scenarios": [
+      "friend",
+      "colleague"
+    ],
+    "tags": [
+      "refuse",
+      "invite"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "去不了",
+        "en": "Can't come."
+      },
+      {
+        "tone": 33,
+        "zh": "谢谢邀请，这次去不了哈",
+        "en": "Thanks for the invite — I can't make it this time."
+      },
+      {
+        "tone": 66,
+        "zh": "感谢盛情邀约，惜未能出席，深表遗憾",
+        "en": "Thank you for the kind invitation; I regret I'm unable to attend."
+      },
+      {
+        "tone": 100,
+        "zh": "被想起是件好事，这份心意我记着",
+        "en": "Being thought of is a good thing — I'll remember the gesture."
+      }
+    ]
+  },
+  {
+    "id": "thank-and-refuse",
+    "intent": "感谢但拒绝帮忙",
+    "keywords": [
+      "谢谢你想到我",
+      "但这次不行",
+      "thanks but no"
+    ],
+    "scenarios": [
+      "colleague",
+      "friend"
+    ],
+    "tags": [
+      "refuse"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "不行",
+        "en": "No."
+      },
+      {
+        "tone": 33,
+        "zh": "谢谢你想到我，但这次真帮不上",
+        "en": "Thanks for thinking of me, but I can't this time."
+      },
+      {
+        "tone": 66,
+        "zh": "感谢您的信任，惜此次无法承接",
+        "en": "Thank you for your confidence; unfortunately I can't take this on."
+      },
+      {
+        "tone": 100,
+        "zh": "每次都能想到我，是我的荣幸；不能每次都答应，也是我的分寸",
+        "en": "Being remembered is an honor — saying no sometimes is part of my own line."
+      }
+    ]
+  },
+  {
+    "id": "handover",
+    "intent": "交接工作",
+    "keywords": [
+      "交接",
+      "交给你了",
+      "后面你负责",
+      "handover"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "process"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "交给你了",
+        "en": "It's yours now."
+      },
+      {
+        "tone": 33,
+        "zh": "后面就交给你啦",
+        "en": "I'll hand this over to you."
+      },
+      {
+        "tone": 66,
+        "zh": "现就相关工作作如下交接，烦请确认接收",
+        "en": "The following handover is provided; please confirm acceptance."
+      },
+      {
+        "tone": 100,
+        "zh": "我写得详细一点，省得以后还要打电话问我",
+        "en": "I'm writing it in detail so nobody has to call me later."
+      }
+    ]
+  },
+  {
+    "id": "request-review",
+    "intent": "请求复查",
+    "keywords": [
+      "帮我看一下",
+      "复核",
+      "检查一遍",
+      "review it"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "request"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你帮我看看",
+        "en": "Take a look at it."
+      },
+      {
+        "tone": 33,
+        "zh": "能不能帮我看一眼哈",
+        "en": "Could you take a quick look?"
+      },
+      {
+        "tone": 66,
+        "zh": "烦请协助复核，重点为数据与结论",
+        "en": "Please review, with focus on the data and conclusions."
+      },
+      {
+        "tone": 100,
+        "zh": "我尽量不留错，但多一双眼睛总是值的",
+        "en": "I try not to leave errors — a second pair of eyes is always worth it."
+      }
+    ]
+  },
+  {
+    "id": "demand-compensation",
+    "intent": "要求补偿",
+    "keywords": [
+      "赔偿",
+      "补偿",
+      "给个说法",
+      "compensation"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "escalation"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你得赔",
+        "en": "You need to compensate me."
+      },
+      {
+        "tone": 33,
+        "zh": "这事总得有个说法吧",
+        "en": "There should be some remedy for this."
+      },
+      {
+        "tone": 66,
+        "zh": "就该情况，我方提出补偿请求，细节如下",
+        "en": "We request compensation for this situation; details below."
+      },
+      {
+        "tone": 100,
+        "zh": "我不想把事情闹大，所以把条件直接写在这里",
+        "en": "I'd rather not escalate — so the terms are simply written below."
+      }
+    ]
+  },
+  {
+    "id": "demand-apology",
+    "intent": "要求道歉",
+    "keywords": [
+      "应该道歉",
+      "给我道歉",
+      "apologize"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "escalation"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "你该道歉",
+        "en": "You should apologize."
+      },
+      {
+        "tone": 33,
+        "zh": "我觉得这儿欠一句道歉",
+        "en": "An apology seems due here."
+      },
+      {
+        "tone": 66,
+        "zh": "就该事项，我方期待正式致歉",
+        "en": "We expect a formal apology on this matter."
+      },
+      {
+        "tone": 100,
+        "zh": "我不需要您难受，只需要您承认一次",
+        "en": "I don't need you to suffer — just to acknowledge it once."
+      }
+    ]
+  },
+  {
+    "id": "express-support",
+    "intent": "表态支持",
+    "keywords": [
+      "支持你",
+      "我站你这边",
+      "backing you"
+    ],
+    "scenarios": [
+      "colleague",
+      "email"
+    ],
+    "tags": [
+      "support"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我支持你",
+        "en": "I'm with you."
+      },
+      {
+        "tone": 33,
+        "zh": "我站你这边哈",
+        "en": "I'm on your side."
+      },
+      {
+        "tone": 66,
+        "zh": "我方对该方案表示支持",
+        "en": "We express our support for this proposal."
+      },
+      {
+        "tone": 100,
+        "zh": "意见我来提，票我还是投你，这两件事不冲突",
+        "en": "I'll raise my concerns and still vote with you — those aren't in conflict."
+      }
+    ]
+  },
+  {
+    "id": "express-concern",
+    "intent": "表达担忧",
+    "keywords": [
+      "我有点担心",
+      "风险",
+      "不太乐观",
+      "concerned"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "feedback"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我担心",
+        "en": "I'm worried."
+      },
+      {
+        "tone": 33,
+        "zh": "我有点担心这块哈",
+        "en": "I'm a bit worried about this part."
+      },
+      {
+        "tone": 66,
+        "zh": "就该方案的风险，谨提请注意",
+        "en": "I'd like to flag the risks in this proposal."
+      },
+      {
+        "tone": 100,
+        "zh": "我不想当那个扫兴的人，但比起扫兴，我更怕事后无话可说",
+        "en": "I'd rather not be the wet blanket — but silence afterward frightens me more."
+      }
+    ]
+  },
+  {
+    "id": "end-cooperation",
+    "intent": "结束合作",
+    "keywords": [
+      "不合作了",
+      "终止合作",
+      "到此为止",
+      "end the partnership"
+    ],
+    "scenarios": [
+      "email",
+      "colleague"
+    ],
+    "tags": [
+      "end"
+    ],
+    "variants": [
+      {
+        "tone": 0,
+        "zh": "我们不合作了",
+        "en": "We're done working together."
+      },
+      {
+        "tone": 33,
+        "zh": "这次可能就到这儿吧",
+        "en": "I think this is where we part ways."
+      },
+      {
+        "tone": 66,
+        "zh": "经慎重考虑，我方决定终止本次合作",
+        "en": "After careful consideration, we've decided to end this collaboration."
+      },
+      {
+        "tone": 100,
+        "zh": "合作讲究彼此都值得，这一点我们大概都没做到",
+        "en": "A partnership needs to be worth it for both — I suspect we both fell short."
+      }
+    ]
+  }
+]
